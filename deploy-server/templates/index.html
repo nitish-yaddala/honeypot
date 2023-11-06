@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pandora</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename = 'style.css')}}"
+    />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="component-pricing-list">
+      <header>
+        <h3>Welcome to Pandora's logs monitoring system</h3>
+        <p>
+          If you were successful in setting up the Pandora honeypot, the logs
+          should be showing up in here.
+        </p>
+      </header>
+      <ul class="pricing-list">
+        <li>
+          <a href="/viewhttp">
+            <span class="title domain-title">HTTP Server logs</span>
+            <span class="price">
+              {{httpnum|safe}}
+              <span>attacks</span>
+            </span>
+            <span class="btn"
+              >Check logs <i class="fas fa-long-arrow-alt-right"></i
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a href="/viewhoneypot">
+            <span class="title domain-title">HoneyPot logs</span>
+            <span class="price">
+              {{honeypotnum|safe}}
+              <span>attacks</span>
+            </span>
+            <span class="btn"
+              >Check logs <i class="fas fa-long-arrow-alt-right"></i
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a href="/viewportscan">
+            <span class="title domain-title">Port Scan logs</span>
+            <span class="price">
+              {{attackernum|safe}} &nbsp;&nbsp;&nbsp;&nbsp; {{portnum|safe}}
+              <span style="text-align: right"
+                >attackers &nbsp; ports scanned</span
+              >
+            </span>
+
+            <span class="btn"
+              >Check logs <i class="fas fa-long-arrow-alt-right"></i
+            ></span>
+          </a>
+        </li>
+      </ul>
+      <div class="action">
+        <a
+          href="https://github.com/L3thal14/Pandora"
+          target="_blank"
+          rel="noreferrer"
+          >Checkout the project on &nbsp <i class="fab fa-github fa-lg"></i
+        ></a>
+      </div>
+    </div>
+    <!-- partial -->
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTTP logs</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename = 'stylehttp.css')}}"
+    />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="component-pricing-list">
+      <header>
+        <h3>Logs from the deployed dummy router gateway HTTP server</h3>
+      </header>
+      <ul class="pricing-list">
+        {% for value in data %}
+        <li>
+          <a href="#">
+            <span class="best-price"> {{value["ip"]}} </span>
+            Browser : {{value["browser"]}} <br />
+            Engine : {{value["engine"]}} <br />
+            Operating System : {{value["os"]}} <br />
+            CPU: {{value["CPU"]}} <br />
+            User Agent : {{value["useragent"]}}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="action">
+        <a href="/"><i class="fas fa-long-arrow-alt-left"></i> Go back </a>
+      </div>
+    </div>
+    <!-- partial -->
+  </body>
+</html>

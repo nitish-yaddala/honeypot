@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Honeypot logs</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename = 'style.css')}}"
+    />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="component-pricing-list">
+      <header>
+        <h3>Logs from the deployed honeypots</h3>
+      </header>
+      <ul class="pricing-list">
+        {% for value in data %}
+        <li>
+          <a href="#">
+            <span class="best-price">
+              {{value["server"].replace("_"," ")}}
+            </span>
+            <span class="title domain-title"> IP : {{value["dest_ip"]}}</span>
+
+            <!-- {% if value["action"]=="process" %} Action : -->
+            <!-- {{value["action"].capitalize()}} -->
+            <br />
+            Username : {{value["username"]}} <br />
+            Password : {{value["password"]}} {% else %} Action:
+            {{value["action"].capitalize()}} 
+            <!-- {% endif %}  -->
+            <br />
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="action">
+        <a href="/"><i class="fas fa-long-arrow-alt-left"></i> Go back </a>
+      </div>
+    </div>
+    <!-- partial -->
+  </body>
+</html>

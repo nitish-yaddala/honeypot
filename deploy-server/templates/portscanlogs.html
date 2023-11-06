@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Port Scan logs</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename = 'styleportscan.css')}}"
+    />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="component-pricing-list">
+      <header>
+        <h3>Logs from the PSAD tool</h3>
+      </header>
+      <ul class="pricing-list">
+        <li>
+          <a href="#">
+            <span class="title domain-title">Attackers</span>
+            {% for value in attackers %} {{value}} <br />
+            {% endfor %}
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="title domain-title">Port Scans</span>
+            {% for value in ports %} {{value}} <br />
+            {% endfor %}
+          </a>
+        </li>
+      </ul>
+      <div class="action">
+        <a href="/"><i class="fas fa-long-arrow-alt-left"></i> Go back </a>
+      </div>
+    </div>
+    <!-- partial -->
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{"error": "port_open.. 0.0.0.0 still open..", "server": "ftp_server", "timestamp": "2023-11-06T21:10:49.695272"}
+{"action": "process", "dest_ip": "0.0.0.0", "dest_port": "21", "password": "anonymous", "server": "ftp_server", "src_ip": "0.0.0.0", "src_port": "21", "status": "error", "timestamp": "2023-11-06T21:10:49.695850", "username": "ftp"}
+{"action": "process", "dest_ip": "0.0.0.0", "dest_port": "21", "password": "anonymous", "server": "ftp_server", "src_ip": "0.0.0.0", "src_port": "21", "status": "success", "timestamp": "2023-11-06T21:11:08.187842", "username": "ftp"}
+{"error": "port_open.. 0.0.0.0 still open..", "server": "ftp_server", "timestamp": "2023-11-06T21:20:44.859606"}
+{"action": "process", "dest_ip": "0.0.0.0", "dest_port": "21", "password": "anonymous", "server": "ftp_server", "src_ip": "0.0.0.0", "src_port": "21", "status": "error", "timestamp": "2023-11-06T21:20:44.859982", "username": "ftp"}
+{"action": "process", "dest_ip": "0.0.0.0", "dest_port": "21", "password": "anonymous", "server": "ftp_server", "src_ip": "0.0.0.0", "src_port": "21", "status": "success", "timestamp": "2023-11-06T21:20:53.193722", "username": "ftp"}

