@@ -33,4 +33,5 @@ def sendlogs():
 
 while True:
     sendlogs()
-    time.sleep(5)
+    time.sleep(20)
+

@@ -73,12 +73,13 @@ def viewportscanLogs():
 @app.route("/httplogs", methods=["POST"])
 def httpLogs():
     data2 = request.get_json()
+    print(data2)
     try:
         with open('httplogs.json', 'r') as fin:
             data = json.load(fin)
     except IOError:
         print('File not found, will create a new one.')
-        data = []
+        data = list()
     with open('httplogs.json', 'w') as fout:
         data.append(data2)
         json.dump(data, fout)

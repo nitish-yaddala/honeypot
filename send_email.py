@@ -3,7 +3,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import sys
 
-FROM_EMAIL = ""
+FROM_EMAIL = "@gmail.com"
 TO_EMAIL = ""
 USER = ""
 PASSWD = ""
@@ -24,7 +24,7 @@ def sendemail():
     '''
     msg.attach(MIMEText(body, 'plain'))
 
-    filename = "/var/log/psad/honeypotslogger"
+    filename = "./deploy-server/honeypotlogs.json"
     f = open(filename)
     attachment = MIMEText(f.read())
     attachment.add_header('Content-Disposition',

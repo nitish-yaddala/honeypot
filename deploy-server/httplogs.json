@@ -1,0 +1,97 @@
+[
+    {
+        "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+        "browser": "Chrome (Version 113.0.0.0)",
+        "engine": "Blink (Version 113.0.0.0)",
+        "os": "Linux x86_64",
+        "device": "undefined (undefined)",
+        "CPU": "amd64",
+        "ip": "153.33.144.191"
+    },
+    {
+        "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+        "browser": "Chrome (Version 113.0.0.0)",
+        "engine": "Blink (Version 113.0.0.0)",
+        "os": "Linux x86_64",
+        "device": "undefined (undefined)",
+        "CPU": "amd64",
+        "ip": "153.33.144.191",
+        "battery": 1
+    },
+    {
+        "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+        "browser": "Chrome (Version 113.0.0.0)",
+        "engine": "Blink (Version 113.0.0.0)",
+        "os": "Linux x86_64",
+        "device": "undefined (undefined)",
+        "CPU": "amd64",
+        "ip": "153.33.144.191",
+        "battery": 1
+    },
+    {
+        "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+        "browser": "Chrome (Version 113.0.0.0)",
+        "engine": "Blink (Version 113.0.0.0)",
+        "os": "Linux x86_64",
+        "device": "undefined (undefined)",
+        "CPU": "amd64",
+        "ip": "153.33.144.191",
+        "battery": "100",
+        "charging": true
+    },
+    {
+        "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+        "browser": "Chrome (Version 113.0.0.0)",
+        "engine": "Blink (Version 113.0.0.0)",
+        "os": "Linux x86_64",
+        "device": "undefined (undefined)",
+        "CPU": "amd64",
+        "ip": "153.33.144.191",
+        "battery": "100",
+        "charging": true
+    },
+    {
+        "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+        "browser": "Chrome (Version 113.0.0.0)",
+        "engine": "Blink (Version 113.0.0.0)",
+        "os": "Linux x86_64",
+        "device": "undefined (undefined)",
+        "CPU": "amd64",
+        "ip": "153.33.144.191",
+        "battery": "97",
+        "charging": false
+    },
+    {
+        "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+        "browser": "Chrome (Version 113.0.0.0)",
+        "engine": "Blink (Version 113.0.0.0)",
+        "os": "Linux x86_64",
+        "device": "undefined (undefined)",
+        "CPU": "amd64",
+        "ip": "153.33.144.191",
+        "battery": "100",
+        "charging": true
+    },
+    {
+        "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+        "browser": "Chrome (Version 113.0.0.0)",
+        "engine": "Blink (Version 113.0.0.0)",
+        "os": "Linux x86_64",
+        "device": "undefined (undefined)",
+        "CPU": "amd64",
+        "ip": "153.33.144.191",
+        "battery": "100",
+        "charging": true
+    },
+    {
+        "useragent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+        "browser": "Chrome (Version 113.0.0.0)",
+        "engine": "Blink (Version 113.0.0.0)",
+        "os": "Linux x86_64",
+        "device": "undefined (undefined)",
+        "CPU": "amd64",
+        "ip": "153.33.144.191",
+        "battery": "97",
+        "charging": false
+    }
+]

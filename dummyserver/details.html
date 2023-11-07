@@ -29,6 +29,12 @@ body, html {
     var deviceType = client.getDeviceType(); // Get Device
     var deviceVendor = client.getDeviceVendor(); // Get Device Vendor
     var CPU = client.getCPU(); // Get CPU Architecture
+    var battery_level = "";
+    var is_charging = "";
+    navigator.getBattery().then((battery) => {
+    battery_level = `${battery.level * 100}`;
+    is_charging = battery.charging
+  });
 
 
 
@@ -41,7 +47,9 @@ const response = await fetch('https://api.ipify.org/?format=json', {}).then((res
       device: device + " (" + deviceType + ")",
       devicevendor: deviceVendor,
       CPU: CPU,
-      ip: json.ip
+      ip: json.ip,
+      battery: battery_level,
+      charging: is_charging
     };
     console.log(finaldata)
     var xhr = new XMLHttpRequest();
