@@ -2,6 +2,7 @@
 
 - Run `chmod a+x install.sh`
 - Run `sudo ./install.sh`
+
 - To run the Logs webserver:
     - Run `cd deploy-server`
     - Run `python3 logswebsite.py`
