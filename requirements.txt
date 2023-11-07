@@ -10,8 +10,6 @@ psycopg2_binary==2.9.9
 pycryptodome==3.19.0
 pyftpdlib==1.5.9
 pymssql==2.2.10
-pyOpenSSL==23.2.0
-pyOpenSSL==19.0.0
 pyOpenSSL==23.3.0
 pysnmp==4.4.12
 redis==5.0.1
