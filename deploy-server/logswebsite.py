@@ -103,13 +103,14 @@ def portscanLogs():
 def honeypotLogs():
     data2 = request.get_json()
     try:
-        with open('honeypot.json', 'r') as fin:
+        with open('honeypotlogs.json', 'r') as fin:
             data = json.load(fin)
     except IOError:
         print('File not found, will create a new one.')
-        data = []
+        data = list()
+    data.append(data2)
     with open('honeypotlogs.json', 'w') as fout:
-        json.dump(data2, fout)
+        json.dump(data, fout)
     return ("Data successfully Sent")
 
 

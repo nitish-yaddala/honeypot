@@ -1,20 +1,51 @@
 [
     {
-        "error": "port_open.. 0.0.0.0 still open..",
-        "server": "ftp_server",
-        "timestamp": "2023-11-06T21:10:49.695272"
+        "action": "process",
+        "dest_ip": "0.0.0.0",
+        "dest_port": "22",
+        "password": "kcpd",
+        "server": "ssh_server",
+        "src_ip": "0.0.0.0",
+        "src_port": "22",
+        "status": "success",
+        "timestamp": "2023-11-06T21:11:08.138259",
+        "username": "ssh"
     },
     {
         "action": "process",
         "dest_ip": "0.0.0.0",
-        "dest_port": "21",
-        "password": "anonymous",
-        "server": "ftp_server",
+        "dest_port": "22",
+        "password": "kcpd",
+        "server": "ssh_server",
         "src_ip": "0.0.0.0",
-        "src_port": "21",
-        "status": "error",
-        "timestamp": "2023-11-06T21:10:49.695850",
-        "username": "ftp"
+        "src_port": "22",
+        "status": "success",
+        "timestamp": "2023-11-06T21:20:53.142265",
+        "username": "ssh"
+    },
+    {
+        "action": "process",
+        "dest_ip": "0.0.0.0",
+        "dest_port": "22",
+        "password": "kcpd",
+        "server": "ssh_server",
+        "src_ip": "0.0.0.0",
+        "src_port": "22",
+        "status": "success",
+        "timestamp": "2023-11-07T01:33:38.378067",
+        "username": "ssh"
+    },
+    {
+        "action": "process",
+        "dest_ip": "0.0.0.0",
+        "dest_port": "22",
+        "password": "kcpd",
+        "server": "ssh_server",
+        "src_ip": "0.0.0.0",
+        "src_port": "22",
+        "status": "success",
+        "timestamp": "2023-11-07T01:34:07.109366",
+        "username": "ssh"
     },
     {
         "action": "process",
@@ -29,11 +60,6 @@
         "username": "ftp"
     },
     {
-        "error": "port_open.. 0.0.0.0 still open..",
-        "server": "ftp_server",
-        "timestamp": "2023-11-06T21:20:44.859606"
-    },
-    {
         "action": "process",
         "dest_ip": "0.0.0.0",
         "dest_port": "21",
@@ -41,8 +67,8 @@
         "server": "ftp_server",
         "src_ip": "0.0.0.0",
         "src_port": "21",
-        "status": "error",
-        "timestamp": "2023-11-06T21:20:44.859982",
+        "status": "success",
+        "timestamp": "2023-11-06T21:20:53.193722",
         "username": "ftp"
     },
     {
@@ -54,7 +80,43 @@
         "src_ip": "0.0.0.0",
         "src_port": "21",
         "status": "success",
-        "timestamp": "2023-11-06T21:20:53.193722",
+        "timestamp": "2023-11-07T01:33:38.436473",
         "username": "ftp"
+    },
+    {
+        "action": "process",
+        "dest_ip": "0.0.0.0",
+        "dest_port": "21",
+        "password": "anonymous",
+        "server": "ftp_server",
+        "src_ip": "0.0.0.0",
+        "src_port": "21",
+        "status": "success",
+        "timestamp": "2023-11-07T01:34:07.166010",
+        "username": "ftp"
+    },
+    {
+        "action": "process",
+        "dest_ip": "0.0.0.0",
+        "dest_port": "21",
+        "password": "anonymous",
+        "server": "ftp_server",
+        "src_ip": "0.0.0.0",
+        "src_port": "21",
+        "status": "success",
+        "timestamp": "2023-11-07T01:34:07.166010",
+        "username": "ftp"
+    },
+    {
+        "action": "process",
+        "dest_ip": "0.0.0.0",
+        "dest_port": "22",
+        "password": "kcpd",
+        "server": "ssh_server",
+        "src_ip": "0.0.0.0",
+        "src_port": "22",
+        "status": "success",
+        "timestamp": "2023-11-07T01:34:07.109366",
+        "username": "ssh"
     }
 ]
