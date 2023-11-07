@@ -1,9 +1,0 @@
-{"error": "port_open.. 0.0.0.0 still open..", "server": "ssh_server", "timestamp": "2023-11-06T21:10:49.719315"}
-{"action": "process", "dest_ip": "0.0.0.0", "dest_port": "22", "password": "kcpd", "server": "ssh_server", "src_ip": "0.0.0.0", "src_port": "22", "status": "error", "timestamp": "2023-11-06T21:10:49.719489", "username": "ssh"}
-{"action": "process", "dest_ip": "0.0.0.0", "dest_port": "22", "password": "kcpd", "server": "ssh_server", "src_ip": "0.0.0.0", "src_port": "22", "status": "success", "timestamp": "2023-11-06T21:11:08.138259", "username": "ssh"}
-{"error": "port_open.. 0.0.0.0 still open..", "server": "ssh_server", "timestamp": "2023-11-06T21:20:44.881258"}
-{"action": "process", "dest_ip": "0.0.0.0", "dest_port": "22", "password": "kcpd", "server": "ssh_server", "src_ip": "0.0.0.0", "src_port": "22", "status": "error", "timestamp": "2023-11-06T21:20:44.881486", "username": "ssh"}
-{"action": "process", "dest_ip": "0.0.0.0", "dest_port": "22", "password": "kcpd", "server": "ssh_server", "src_ip": "0.0.0.0", "src_port": "22", "status": "success", "timestamp": "2023-11-06T21:20:53.142265", "username": "ssh"}
-{"action": "process", "dest_ip": "0.0.0.0", "dest_port": "22", "password": "kcpd", "server": "ssh_server", "src_ip": "0.0.0.0", "src_port": "22", "status": "success", "timestamp": "2023-11-07T01:33:38.378067", "username": "ssh"}
-{"action": "process", "dest_ip": "0.0.0.0", "dest_port": "22", "password": "kcpd", "server": "ssh_server", "src_ip": "0.0.0.0", "src_port": "22", "status": "success", "timestamp": "2023-11-07T01:34:07.109366", "username": "ssh"}
-{"action": "process", "dest_ip": "0.0.0.0", "dest_port": "22", "password": "kcpd", "server": "ssh_server", "src_ip": "0.0.0.0", "src_port": "22", "status": "success", "timestamp": "2023-11-07T01:34:07.109366", "username": "ssh"}
