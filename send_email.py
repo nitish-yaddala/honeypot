@@ -8,7 +8,7 @@ TO_EMAIL = ""
 USER = ""
 PASSWD = ""
 
-def sendemail():
+def sendemail(filename):
     fromaddr = FROM_EMAIL
     toaddr = TO_EMAIL
     toaddrs = [toaddr]
@@ -23,8 +23,6 @@ def sendemail():
     Nitish
     '''
     msg.attach(MIMEText(body, 'plain'))
-
-    filename = "./deploy-server/honeypotlogs.json"
     f = open(filename)
     attachment = MIMEText(f.read())
     attachment.add_header('Content-Disposition',
@@ -42,4 +40,4 @@ def sendemail():
     server.quit()
 
 
-sendemail()
+sendemail("test")

@@ -19,17 +19,9 @@ def mainWebsite():
     except IOError:
         print('File not found, will create a new one.')
         datahoneypot = [{"honeypots": []}]
-    try:
-        with open('portscanlogs.json', 'r') as fin:
-            dataportscan = json.load(fin)
-    except IOError:
-        print('File not found, will create a new one.')
-        dataportscan = [{"attacker": "", "ports": ""}]
     httpnum = len(datahttp)
     honeypotnum = len(datahoneypot)
-    attackernum = len(dataportscan)
-    portnum = len(dataportscan)
-    return render_template("index.html", httpnum=httpnum, honeypotnum=honeypotnum, attackernum=attackernum, portnum=portnum)
+    return render_template("index.html", httpnum=httpnum, honeypotnum=honeypotnum)
 
 
 @app.route("/viewhttp")
@@ -57,19 +49,6 @@ def viewhoneypotLogs():
     return render_template("honeypotlogs.html", data=finaldata)
 
 
-@app.route("/viewportscan")
-def viewportscanLogs():
-    try:
-        with open('portscanlogs.json', 'r') as fin:
-            dataportscan = json.load(fin)
-    except IOError:
-        print('File not found, will create a new one.')
-        dataportscan = [{"attacker": "", "ports": ""}]
-    attackers = dataportscan[0]["attacker"]
-    ports = dataportscan[0]["ports"]
-    return render_template("portscanlogs.html", attackers=attackers, ports=ports)
-
-
 @app.route("/httplogs", methods=["POST"])
 def httpLogs():
     data2 = request.get_json()
@@ -83,20 +62,6 @@ def httpLogs():
     with open('httplogs.json', 'w') as fout:
         data.append(data2)
         json.dump(data, fout)
-    return ("Data successfully Sent")
-
-
-@app.route("/portscanlogs", methods=["POST"])
-def portscanLogs():
-    data2 = request.get_json()
-    try:
-        with open('portscanlogs.json', 'r') as fin:
-            data = json.load(fin)
-    except IOError:
-        print('File not found, will create a new one.')
-        [{"attacker": "", "ports": ""}]
-    with open('portscanlogs.json', 'w') as fout:
-        json.dump(data2, fout)
     return ("Data successfully Sent")
 
 

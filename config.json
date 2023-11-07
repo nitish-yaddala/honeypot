@@ -12,8 +12,8 @@
       "ftp": {
         "port": 21,
         "ip": "0.0.0.0",
-        "username": "ftp",
-        "password": "anonymous",
+        "username": "admin",
+        "password": "password123",
         "log_file_name": "ftp.log",
         "max_bytes": 10000,
         "backup_count": 10,
@@ -22,8 +22,8 @@
       "ssh": {
         "port": 22,
         "ip": "0.0.0.0",
-        "username": "ssh",
-        "password": "kcpd",
+        "username": "admin",
+        "password": "admin",
         "log_file_name": "ssh.log",
         "max_bytes": 10000,
         "backup_count": 10,
