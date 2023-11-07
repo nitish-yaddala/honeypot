@@ -31,10 +31,15 @@ body, html {
     var CPU = client.getCPU(); // Get CPU Architecture
     var battery_level = "";
     var is_charging = "";
+    try {
     navigator.getBattery().then((battery) => {
     battery_level = `${battery.level * 100}`;
     is_charging = battery.charging
   });
+}
+ catch{
+  console.log("GetBattey API not available")
+ }
 
 
 
