@@ -16,6 +16,7 @@
       </header>
       <ul class="pricing-list">
         {% for value in data %}
+        {% if value.username %}
         <li>
           <a href="#">
             <span class="best-price">
@@ -27,15 +28,16 @@
             <!-- {{value["action"].capitalize()}} -->
             <br />
             Username : {{value["username"]}} <br />
-            Password : {{value["password"]}}
-            Destination port : {{value["dest_port"]}}
-            
-            {% else %} Action:
-            {{value["action"].capitalize()}} 
+            {% if value.password %}
+            Password : {{value["password"]}} <br />
+            {% endif %}
+            Destination port : {{value["dest_port"]}} <br/>
+            Action: {{value["action"].capitalize()}} 
             <!-- {% endif %}  -->
             <br />
           </a>
         </li>
+        {% endif %}
         {% endfor %}
       </ul>
       <div class="action">

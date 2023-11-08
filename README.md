@@ -19,7 +19,8 @@ In terminal 1, activate the virtual environment and install the `honeypots` pip 
     - Run `cd httphoneypot`
     - Run `python3 -m http.server 80`
 
-- Start the monitoring process daemon for the script `monitor.py`
+- In terminal 4, start the monitoring script:
+- Start the monitoring process daemon for the script `python3 monitor.py`
 
 
 
