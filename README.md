@@ -4,16 +4,15 @@
 
 In terminal 1, activate the virtual environment and install the `honeypots` pip package:
 - Run `python3.8 -m pip install virtualenv`
-- Run `python3.8 -m venv honeypotenv`
 - source `honeypotenv/bin/activate`
-- Run `python3 -m pip install honeypots`
-- Then run, `sudo -E python3.8 -m honeypots --setup <SERVICE1,SERVICE2,SERVICE3> --config config.json`
-- Stop the above process whenever you feel like.
+- Run `cd logsserver`
+- Run `python3 logswebsite.py`
 
 
 - In terminal 2, run the Logs webserver:
-    - Run `cd logsserver`
-    - Run `python3 logswebsite.py`
+    - Run `python3 -m pip install honeypots`
+    - Then run, `sudo -E python3.8 -m honeypots --setup <SERVICE1,SERVICE2,SERVICE3> --config config.json`
+- Stop the above process whenever you feel like.
 
 - In terminal 3, run the dummy server:
     - Run `cd httphoneypot`
