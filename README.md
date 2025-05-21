@@ -1,5 +1,5 @@
 # Suggested python version 3.10.12
-## Steps to Run
+## Steps to Run:
 
 - Clone the project using `git clone git@github.com:Stranger825/honeypot.git`
 
